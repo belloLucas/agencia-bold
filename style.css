@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.main{
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+    background-image: url(./images/HERO\ BACKGROUND.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu{
+    width: 50%;
+}
+
+.items-menu{
+    width: 50%;
+    text-align: right;
+}
+
+.items-menu a{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.items-menu a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.items-menu a.contact-btn{
+    padding: 10px 10px;
+    background-color: #0F3FD3;
+    border-radius: 5px;
+}
+
+.items-menu a.contact-btn:hover{
+    border: 0;
+}
+
+/* Mobile Items menu CSS */
+
+.items-menu-mobile{
+    display: none;
+    width: 50%;
+    text-align: right;
+}
+
+.items-menu-mobile i{
+    position: relative;
+    top: 15px;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* Fim do CSS do Menu Mobile */
+
+.mockup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.mockup h1{
+    font-size: 44px;
+    margin-bottom: 1rem;
+}
+
+.mockup p{
+    margin-bottom: 2rem;
+}
+
+.mockup img{
+    max-width: 100%;
+}
+
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: calc(100% / 5);
+}
+
+section.porque-nos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+section.porque-nos > .center{
+    max-width: 1280px;
+}
+
+
+section.porque-nos > .center > h2{
+    width: 100%;
+    font-size: 64px;
+    text-align: center;
+}
+
+section.porque-nos > .center > p{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: #7E92AC;
+    text-align: center;
+}
+
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    width: 31%;
+    margin-right: 2%;
+    padding: 20px 20px;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3{
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+.box-diferenciais p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+section.cta{
+    min-height: 300px;
+    padding: 20px 10px;
+    background-image: url(./images/BANNER\ IMG.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+section.cta h2, section.cta h4{
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+section.cta h2{
+    font-size: 50px;
+}
+
+section.cta a{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: #0F3FD3;
+    background-color: #FFDD33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista-beneficios{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.lista-beneficios h1{
+    font-size: 44px;
+    margin-left: 20px;
+}
+
+.lista-beneficios p{
+    color: #7E92AC;
+}
+
+.lista-beneficios span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.lista-beneficios a{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    margin-left: 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: #255AFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista-beneficios a:hover{
+    background-color: #0F3FD3;
+}
+
+.lista-beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px
+}
+
+.img-beneficios{
+    width: 60%;
+}
+
+.img-beneficios img{
+    max-width: 100%;
+}
+
+section.depoimentos{
+    background-color: #FBFCFE;
+}
+
+section.depoimentos > h1{
+    font-size: 44px;
+    text-align: center;
+    margin: .4rem 0;
+    padding-top: 5rem;
+}
+
+.container-slider{
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.container-slider-single{
+    padding: 15px;
+    float: left;
+    box-shadow: 0px 20px 50px #70707016;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.container-slider-single p{
+    margin: 15px 0;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+/* CSS do Slick Slider */
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+.slick-list{
+    margin-left: -27px;
+}
+
+.slick-dotted ul{
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+    background: #373855;
+    color: #373855;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+
+/* Fim do CSS do Slick Slider */
+
+section.contato{
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.contato h1{
+    font-size: 44px;
+    margin: 2rem 0;
+}
+
+section.contato form{
+    width: 100%;
+}
+
+.contato input[type=text], .contato input[type=email]{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    padding-left: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 280px;
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+.contato input[type=submit]{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #255AFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contato input[type=submit]:hover{
+    background: #0F3FD3;
+}
+
+footer{
+    padding: 10px 0;
+    background: #255AFF;
+    color:white;
+}
+
+.text-footer{
+    width: 50%;
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .items-menu-mobile{
+        display: block;
+    }
+
+    .mobile-menu{
+        /* display: none; */
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        padding: 20px 0;
+        transition: 1s;
+        text-align: center;
+        background-color: white;
+    }
+
+    .show{
+        /* display: block; */
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .mobile-menu a{
+        display: block;
+        margin: 5rem 0;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    section.main .items-menu{
+        display: none;
+    }
+
+    section.marcas{
+        text-align: center;
+    }
+
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img{
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer .items-menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .items-menu a{
+        display: block;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .text-footer{
+        width: 100%;
+        text-align: center;
+    }
+}
